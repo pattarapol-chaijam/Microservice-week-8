@@ -14,7 +14,7 @@ export class MathController {
 
   @MessagePattern({ cmd: 'sum' })
   sum2(numbers: number[]): number {
-    this.logger.log('sum ' + numbers);
+    this.logger.log('sum2 ' + numbers);
     return this.mathservice.accumulate(numbers);
   }
 }
